@@ -1,0 +1,15 @@
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+.autoCompleteInputWrapper{
+    display: inline-block;
+    position: relative;
+}
+.autoCompleteInput,
+.autoCompleteInput:focus{
+    padding: 5px;
+    border-radius: 0;
+    outline: none;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+}

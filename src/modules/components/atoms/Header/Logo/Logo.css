@@ -1,0 +1,7 @@
+.logo a,
+.logo a:active,
+.logo a:visited,
+.logo a:hover{
+    color: black;
+    text-decoration: unset;
+}
