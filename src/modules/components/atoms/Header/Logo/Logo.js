@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Logo.css'
 
 const Logo = () => {
     return (
         <div className='logo'>
-            <Link to={'/'}>
+            <NavLink to={'/'} exact>
                 <strong>
                     JobsNow
                 </strong>
-            </Link>
+            </NavLink>
         </div>
     )
 };

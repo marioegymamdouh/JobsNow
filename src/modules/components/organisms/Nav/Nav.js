@@ -7,11 +7,11 @@ const Nav = ({
     return (
         <ul className={className}>
             {
-                routes.map(route => <li>
+                routes.map((route, index) => <li key={index}>
                     <NavLink
                         exact
                         to={route.path}
-                        activeClass={'active'}
+                        activeClassName={'active'}
                     >
                         {route.name}
                     </NavLink>
