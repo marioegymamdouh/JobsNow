@@ -13,18 +13,19 @@ function App() {
             <Header
                 routes={routes}
             />
-
-            <Switch>
-                {
-                    routes.map((route, index) => <Route
-                        key={index}
-                        path={route.path}
-                        exact
-                    >
-                        {route.component}
-                    </Route>)
-                }
-            </Switch>
+            <main>
+                <Switch>
+                    {
+                        routes.map((route, index) => <Route
+                            key={index}
+                            path={route.path}
+                            exact
+                        >
+                            {route.component}
+                        </Route>)
+                    }
+                </Switch>
+            </main>
         </Router>
     </div>
   );

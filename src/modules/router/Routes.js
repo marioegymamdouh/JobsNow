@@ -1,8 +1,10 @@
+import Home from "../components/pages/Home/Home";
+
 const routes = [
     {
         name: 'home',
         path: '/',
-        component: <div>home</div>
+        component: <Home/>
     },
     {
         name: 'search',
