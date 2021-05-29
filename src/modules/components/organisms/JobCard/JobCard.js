@@ -12,9 +12,12 @@ const JobCard = ({
     const [skills, setSkills] = useState();
 
     useEffect(() => {
+        // TODO there is performance leak as skill returning with separated calls
         JobsApi.getRelatedSkills(job.uuid).then(({ data }) => {
             setSkills(data.skills.splice(0,5))
         })
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
