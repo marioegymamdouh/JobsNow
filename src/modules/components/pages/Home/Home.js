@@ -11,6 +11,8 @@ const Home = () => {
     useEffect(() => {
         JobsApi.getAllJobs().then(({data}) => {
             setJobs(data.splice(0,12))
+        }).catch(() => {
+            alert('Error happened please refresh...')
         })
     }, []);
 
