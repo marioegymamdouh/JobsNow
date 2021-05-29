@@ -31,7 +31,7 @@ const JobCard = ({
                     <TagsList tags={skills}/>
                 )}
             </div>
-            <NavLink to={'/'}>
+            <NavLink to={`/job/${job.uuid}`}>
                 View Job Details
             </NavLink>
         </div>

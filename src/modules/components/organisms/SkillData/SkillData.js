@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './SkillData.css';
-import RelatedJobs from "../RelatedItems/RelatedJobs/RelatedJobs";
+import RelatedItems from "../RelatedItems/RelatedItems";
 import SkillsApi from "../../../api/SkillsApi";
 
 const SkillData = ({
@@ -17,8 +17,10 @@ const SkillData = ({
         <div className={'skillData'}>
             <h2>Description</h2>
             <p>{skill?.description}</p>
-            <RelatedJobs
-                relatedJobs={relatedJobs}
+            <RelatedItems
+                relatedItems={relatedJobs}
+                title={'Related Jobs'}
+                type={'job'}
             />
         </div>
     )

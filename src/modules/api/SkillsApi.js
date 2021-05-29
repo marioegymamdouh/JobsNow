@@ -1,9 +1,9 @@
 import jobsAxios from "./axiosInstances";
 
-const JobsApi = {
-    getSkillInfo: (skillId) => jobsAxios.get(`/skills/${skillId}`),
-    getRelatedSkills: (skillId) => jobsAxios.get(`/skills/${skillId}/related_skills`),
-    getRelatedJobs: (skillId) => jobsAxios.get(`/skills/${skillId}/related_jobs`),
+const SkillsApi = {
+    getSkillInfo: (id) => jobsAxios.get(`/skills/${id}`),
+    getRelatedSkills: (id) => jobsAxios.get(`/skills/${id}/related_skills`),
+    getRelatedJobs: (id) => jobsAxios.get(`/skills/${id}/related_jobs`),
 }
 
-export default JobsApi;
+export default SkillsApi;

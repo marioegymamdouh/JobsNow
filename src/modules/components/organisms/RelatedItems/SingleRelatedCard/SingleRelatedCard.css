@@ -1,26 +1,29 @@
-.singleRelatedJob {
+.singleRelatedCard {
     padding: 1rem;
     background-color: #f0f0f0;
 }
-.singleRelatedJob a {
+.singleRelatedCard a {
     color: black;
     font-weight: bold;
     margin-bottom: .5rem;
     line-height: 1.3;
 }
-.singleRelatedJobDta {
+.singleRelatedCard p {
+    margin-top: 1.5rem;
+}
+.singleRelatedCardData {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 1.5rem;
     font-size: .9rem;
     gap: 5px;
 }
-.singleRelatedJobDta h6 {
+.singleRelatedCardData h6 {
     display: inline-block;
 }
 
 @media (min-width: 768px) {
-    .singleRelatedJobDta {
+    .singleRelatedCardData {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-top: 1.5rem;

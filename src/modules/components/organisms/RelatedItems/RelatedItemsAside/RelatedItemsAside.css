@@ -2,6 +2,7 @@
     background-color: #d9d9d9;
     padding: 1.5rem;
     min-height: 300px;
+    height: fit-content;
 }
 .relatedItemsAside.dummy {
     position: relative;
@@ -26,5 +27,9 @@
     padding-inline-start: 1.3rem;
 }
 .relatedItemsAside ul a{
+    display: inline-block;
+    font-size: .9rem;
     color: black;
+    margin-bottom: 1.2rem;
+    vertical-align: text-top;
 }

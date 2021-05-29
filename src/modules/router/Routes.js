@@ -1,5 +1,6 @@
 import Home from "../components/pages/Home/Home";
 import Skill from "../components/pages/Skill/Skill";
+import Job from "../components/pages/Job/Job";
 
 const routes = [
     {
@@ -24,6 +25,12 @@ const routes = [
         name: 'skill',
         path: '/skill/:skillId',
         component: <Skill/>,
+        appearInNav: false
+    },
+    {
+        name: 'job',
+        path: '/job/:jobId',
+        component: <Job/>,
         appearInNav: false
     },
 

@@ -18,7 +18,7 @@ const Skill = () => {
         })
 
         SkillsApi.getRelatedSkills(params.skillId).then(({data}) => {
-            setRelatedSkills(data.skills.map(skill => ({
+            setRelatedSkills(data.skills.splice(0,12).map(skill => ({
                 uuid: skill.uuid,
                 name: skill.skill_name
             })))
@@ -26,8 +26,7 @@ const Skill = () => {
             alert('Error happened please refresh...')
         })
 
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [params]);
 
     return (
         <div>
