@@ -10,8 +10,14 @@
     }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1200px) {
     .twoBigCol {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1400px) {
+    .twoBigCol {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
