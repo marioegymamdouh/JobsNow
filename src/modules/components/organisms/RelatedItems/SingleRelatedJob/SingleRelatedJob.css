@@ -1,0 +1,18 @@
+.singleRelatedJob {
+    padding: 1rem;
+    background-color: #f0f0f0;
+}
+.singleRelatedJob a {
+    color: black;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.singleRelatedJobDta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1.5rem;
+    font-size: .9rem;
+}
+.singleRelatedJobDta h6 {
+    display: inline-block;
+}

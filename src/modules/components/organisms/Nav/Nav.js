@@ -7,15 +7,17 @@ const Nav = ({
     return (
         <ul className={className}>
             {
-                routes.map((route, index) => <li key={index}>
-                    <NavLink
-                        exact
-                        to={route.path}
-                        activeClassName={'active'}
-                    >
-                        {route.name}
-                    </NavLink>
-                </li>)
+                routes.map((route, index) => route.appearInNav && (
+                    <li key={index}>
+                        <NavLink
+                            exact
+                            to={route.path}
+                            activeClassName={'active'}
+                        >
+                            {route.name}
+                        </NavLink>
+                    </li>
+                ))
             }
         </ul>
     );

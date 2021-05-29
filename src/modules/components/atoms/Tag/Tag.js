@@ -1,4 +1,5 @@
 import './Tag.css'
+import {NavLink} from "react-router-dom";
 
 const Tag = ({
     tag,
@@ -10,7 +11,12 @@ const Tag = ({
             className={`tag ${dummy? 'dummy' : ''}`}
             style={style}
         >
-            {tag?.skill_name}
+            {!dummy &&
+                <NavLink to={`/skill/${tag.skill_uuid}`}>
+                    {tag?.skill_name}
+                </NavLink>
+            }
+
         </li>
     )
 }

@@ -16,13 +16,15 @@ function App() {
             <main>
                 <Switch>
                     {
-                        routes.map((route, index) => <Route
-                            key={index}
-                            path={route.path}
-                            exact
-                        >
-                            {route.component}
-                        </Route>)
+                        routes.map((route, index) =>
+                            <Route
+                                key={index}
+                                path={route.path}
+                                exact
+                            >
+                                {route.component}
+                            </Route>
+                        )
                     }
                 </Switch>
             </main>

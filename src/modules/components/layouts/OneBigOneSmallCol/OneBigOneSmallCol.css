@@ -1,0 +1,23 @@
+.oneBigOneSmallCol {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px
+}
+
+@media (min-width: 768px) {
+    .oneBigOneSmallCol {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .oneBigOneSmallCol {
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
+@media (min-width: 1400px) {
+    .oneBigOneSmallCol {
+        grid-template-columns: 4fr 1fr;
+    }
+}

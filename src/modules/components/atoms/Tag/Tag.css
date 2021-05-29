@@ -5,6 +5,9 @@
     border-radius: 4px;
     min-height: 22px;
 }
+.tag a {
+    text-decoration: none;
+}
 .tag.dummy {
     position: relative;
     overflow: hidden;
